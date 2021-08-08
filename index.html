@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="desktop.css" media="(min-width: 980px)">
+    <script src="./jquery-3.6.0.min.js"></script>
+    <title>DERMLIVE INFLUENCERS | Trivia</title>
+</head>
+<body>
+    <header class="header__container">
+        <section class="logo__container">
+            <img class="logo" src="./assets/title1.png" alt="LaRoche-Posay">
+        </section>
+        <section class="second_logos__container">
+            <img class="microbiome" src="./assets/title3.png" alt="Microbiome Science">
+            <img class="dermlive" src="./assets/title2.png" alt="Dermlive Microbioma">
+            <img class="dermlivelaroche" src="./assets/title4.png" alt="Dermlive LaRoche-Posay">
+        </section>
+    </header>
+
+
+    <!-- FORMULARIO INICIAL -->
+    <main class="form_main__container" id="form_main__container">
+        <form autocomplete="off" action="saveData.php" method="" class="form__container" id="form__container">
+            <label for="nombre">
+                <span>NOMBRE Y APELLIDO</span>
+                <input class="input" type="text" name="nombre" id="nombre" placeholder="Ingresá tu nombre" required>
+            </label>
+    
+            <label for="email">
+                <span>CORREO ELECTRÓNICO</span>
+                <input class="input" type="email" name="email" id="email" placeholder="Ingresá tu correo electrónico" required>
+            </label>
+    
+            <label for="button">
+                <input type="submit" class="button__enviar" id="button__enviar" value="Continuar">
+            </label>
+        </form>
+    </main>
+
+
+    <!-- FIN FORMULARIO INICIAL -->
+
+    <!-- INICIO TRIVIA -->
+
+    <main class="main__container">
+        <section class="trivia_main__container" id="trivia_main__container">
+            <section class="title__container">
+                <h2>VERDADERO <br> <b>O FALSO</b></h2>
+            </section>
+            <section class="trivia__container">    
+                <section class="card__container">
+                    <section class="affirmation_card__container">
+                        <h4>TODOS TENEMOS EL <b>MISMO MICROBIOMA</b></h4>
+                    </section>
+                    <article class="affirmation_img__container">
+                        <figure><img class="affirmation__img" src="./assets/image1.png" alt=""></figure>
+                        <button class="affirmative__button" id="affirmative_btn__question1"></button>
+                        <button class="negative__button" id="negative_btn__question1"></button>
+                    </article>
+                </section>
+
+                
+                <section class="card__container">
+                    <section class="affirmation_card__container">
+                        <h4>LA DERMATITIS ATÓPICA SE RELACIONA CON UN <b>MICROBIOMA DESBALANCEADO</b></h4>
+                    </section>
+                    <article class="affirmation_img__container">
+                        <figure><img class="affirmation__img" src="./assets/image2.png" alt=""></figure>
+                        <button class="affirmative__button" id="affirmative_btn__question2"></button>
+                        <button class="negative__button" id="negative_btn__question2"></button>
+                    </article>
+                </section>
+                
+                
+                <section class="card__container">
+                    <section class="affirmation_card__container">
+                        <h4>EL CUIDADO DE LA PIEL CON PREBIÓTICOS AYUDA A TENER UN <b>MICROBIOMA EQUILIBRADO</b></h4>
+                    </section>
+                    <article class="affirmation_img__container">
+                        <figure><img class="affirmation__img" src="./assets/image3.png" alt=""></figure>
+                        <button class="affirmative__button" id="affirmative_btn__question3"></button>
+                        <button class="negative__button" id="negative_btn__question3"></button>
+                    </article>
+                </section>
+            </section>
+        </section>
+
+
+
+
+        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
+        <section class="card_resultado__container" class="verdadero">
+
+        </section>
+        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
+        <section class="card_resultado__container" class="falso">
+
+        </section>
+        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
+        <section class="card_resultado__container" class="verdadero">
+
+        </section>
+        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
+        <section class="card_resultado__container" class="falso">
+
+        </section>
+        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
+        <section class="card_resultado__container" class="verdadero">
+
+        </section>
+        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
+        <section class="card_resultado__container" class="falso">
+
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
