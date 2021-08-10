@@ -1,15 +1,5 @@
 <?php
-    require "Competitor.php";
-    $file = fopen("data.txt", "rb");
-    $fileContent = fread($file, filesize("data.txt"));
-    $competitors = explode("**", $fileContent);
-    array_pop($competitors);
-    $competitorsArray = array();
-    foreach ($competitors as $c) { 
-        $competitorData = explode("//", $c);
-        $competitor = new Competitor($competitorData[0], $competitorData[1], $competitorData[2], 10);
-        array_push($competitorsArray, $competitor);
-    }
+    include "orderCompetitors.php";    
 ?>
 
 <!DOCTYPE html>
