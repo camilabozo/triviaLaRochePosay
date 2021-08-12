@@ -21,19 +21,21 @@
         </section>
     </header>
 
-
     <!-- FORMULARIO INICIAL -->
-    <form action="saveData.php" method="POST" id="form" >
+    <form autocomplete="off" action="saveData.php" method="POST" id="form" >
         <main class="form_main__container" id="form_main__container">
             <section class="form__container" id="form__container">
                 <label for="nombre">
                     <span>NOMBRE Y APELLIDO</span>
-                    <input class="input" type="text" name="userName" id="userName" placeholder="Ingresá tu nombre" required>
+                    <input class="input" type="text" name="userName" id="userName" placeholder="Ingresá tu nombre" required />
+                    <div id="error__message" style="color: red" hidden>
+                        Introduzca solo letras (A-Z) o (a-z). Máximo 35 caracteres.
+                    </div>
                 </label>
         
                 <label for="email">
                     <span>CORREO ELECTRÓNICO</span>
-                    <input class="input" type="email" name="userEmail" id="userEmail" placeholder="Ingresá tu correo electrónico" required>
+                    <input class="input" type="email" name="userEmail" id="userEmail" placeholder="Ingresá tu correo electrónico" required />
                 </label>
         
                 <label for="button">

@@ -29,8 +29,10 @@ window.addEventListener("resize", relocateFinishButton);
 
 $(document).ready(function(){
     $("#button__start").click(function(){
-        $('.trivia_main__container').show(1000);
-        $('#form_main__container').hide();
+        if(validate()){
+            $('.trivia_main__container').show(1000);
+            $('#form_main__container').hide();
+        }
     });
     
     $('#affirmative_btn__question1').click(function(){
@@ -73,6 +75,35 @@ $(document).ready(function(){
 });
 
 relocateFinishButton();
+
+function validate(){
+    let isValid = false;
+    var userName = document.forms["form"]["userName"];
+    //var userEmail = document.forms[form]["userEmail"];
+    const errorMessage = document.getElementById('error__message');
+    // input.willValidate = false;
+    const max = 35;
+    const pattern = new RegExp(/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g);
+    
+    if(!userName.value) {
+        isValid = false;
+    }else if(userName.value.length > max) {    
+        isValid = false;
+    }else if(!pattern.test(userName.value)){   
+        // Si queremos agregar letras acentuadas y/o letra ñ debemos usar
+        // codigos de Unicode (ejemplo: Ñ: \u00D1  ñ: \u00F1)
+        isValid = false;
+    }else{
+        isValid = true;
+    }
+
+    if(!isValid) {
+        userName.style.borderColor = 'red';
+        errorMessage.hidden = false;
+    }
+
+    return isValid;
+}
 
 function correctAnswer(){
     correctAnswers++;
