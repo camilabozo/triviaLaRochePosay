@@ -29,7 +29,20 @@ window.addEventListener("resize", relocateFinishButton);
 
 $(document).ready(function(){
     $("#button__start").click(function(){
-        if(validate()){
+        var userName = document.forms["form"]["userName"];
+        var nameRegExp = /^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g;
+        var nameErrorMessage = document.getElementById('name_error__message');
+        var nameMaxCharacters = 35;
+
+        var userEmail = document.forms["form"]["userEmail"];
+        var emailRegExp = /^([a-z\d\-._\u00f1\u00d1]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+        var emailErrorMessage = document.getElementById('email_error__message');
+        var emailMaxCharacters = 50;
+
+        var userEmailIsValid = validateField(userEmail, emailRegExp, emailErrorMessage, emailMaxCharacters);
+        var userNameIsValid = validateField(userName, nameRegExp, nameErrorMessage, nameMaxCharacters);
+
+        if(userNameIsValid && userEmailIsValid) {  
             $('.trivia_main__container').show(1000);
             $('#form_main__container').hide();
         }
@@ -76,30 +89,28 @@ $(document).ready(function(){
 
 relocateFinishButton();
 
-function validate(){
+function validateField(field, regExp, errorMessage, maxCharacters){
     let isValid = false;
-    var userName = document.forms["form"]["userName"];
-    //var userEmail = document.forms[form]["userEmail"];
-    const errorMessage = document.getElementById('error__message');
     // input.willValidate = false;
-    const max = 35;
-    const pattern = new RegExp(/^[a-zA-ZÀ-ÿ\u00f1\u00d1]+(\s*[a-zA-ZÀ-ÿ\u00f1\u00d1]*)*[a-zA-ZÀ-ÿ\u00f1\u00d1]+$/g);
+    const pattern = new RegExp(regExp);
     
-    if(!userName.value) {
+    if(!field.value) {
         isValid = false;
-    }else if(userName.value.length > max) {    
+    }else if(field.value.length > maxCharacters) {    
         isValid = false;
-    }else if(!pattern.test(userName.value)){   
-        // Si queremos agregar letras acentuadas y/o letra ñ debemos usar
-        // codigos de Unicode (ejemplo: Ñ: \u00D1  ñ: \u00F1)
+    }else if(!pattern.test(field.value)){   
         isValid = false;
     }else{
         isValid = true;
     }
 
     if(!isValid) {
-        userName.style.borderColor = 'red';
+        field.focus();
+        field.style.borderColor = 'red';
         errorMessage.hidden = false;
+    }else{
+        field.style.borderColor = 'black';
+        errorMessage.hidden = true;
     }
 
     return isValid;

@@ -28,14 +28,17 @@
                 <label for="nombre">
                     <span>NOMBRE Y APELLIDO</span>
                     <input class="input" type="text" name="userName" id="userName" placeholder="Ingresá tu nombre" required />
-                    <div id="error__message" style="color: red" hidden>
-                        Introduzca solo letras (A-Z) o (a-z). Máximo 35 caracteres.
+                    <div class="error__message" id="name_error__message" hidden>
+                        Nombre y apellido inválido. Sólo caracteres alfabéticos.
                     </div>
                 </label>
         
-                <label for="email">
+                <label class="email" for="email">
                     <span>CORREO ELECTRÓNICO</span>
                     <input class="input" type="email" name="userEmail" id="userEmail" placeholder="Ingresá tu correo electrónico" required />
+                    <div class="error__message" id="email_error__message" hidden>
+                        Email inválido.
+                    </div>
                 </label>
         
                 <label for="button">
