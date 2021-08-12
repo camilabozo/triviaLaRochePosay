@@ -1,1 +1,1 @@
-# proyectoTriviaLaRochePosay
+# triviaLaRochePosay
