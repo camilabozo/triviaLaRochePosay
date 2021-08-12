@@ -1,0 +1,42 @@
+@media (min-width: 980px){
+    .trivia__container{
+        flex-direction: row;
+    }
+    .answers__container{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 72%;
+        position: relative;
+    }
+    .answer_card__container{
+        min-width: 220px;
+        margin-left: 30px;
+        max-width: 23%;
+    }
+    .finish_trivia_button__container{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 45px;
+    }
+    .finish_trivia__button{
+        width: 150px;
+    }
+    .main_title__container{
+        width:73%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .title__container{
+        justify-content: flex-start;
+    }
+    .card__container{
+        max-width: 25%;
+    }
+
+    .second_logos__container{
+        flex-direction: row;
+    }
+}

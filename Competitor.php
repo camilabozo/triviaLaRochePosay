@@ -4,13 +4,15 @@ class Competitor{
     private $name;
     private $email;
     private $correctAnswers;
-    private $time;
+    private $employedTime;
+    private $endTime;
 
-    public function __construct($name, $email, $correctAnswers, $time){
+    public function __construct($name, $email, $correctAnswers, $time, $end_time){
         $this->name = $name;
         $this->email = $email;
         $this->correctAnswers = $correctAnswers;
-        $this->time = $time;
+        $this->employedTime = $time;
+        $this->endTime = $end_time;
     }
 
     public function getName(){
@@ -25,8 +27,12 @@ class Competitor{
         return $this->correctAnswers;
     }
 
-    public function getTime(){
-        return $this->time;
+    public function getEmployedTime(){
+        return $this->employedTime;
+    }
+
+    public function getEndTime(){
+        return $this->endTime;
     }
 
     public function setName($name){
@@ -41,8 +47,12 @@ class Competitor{
         $this->correctAnswers = $correctAnswers;
     }
 
-    public function setTime($time){
-        $this->time = $time;
+    public function setEmployedTime($time){
+        $this->employedTime = $time;
+    }
+
+    public function setEndTime($end_time){
+        $this->endTime = $end_time;
     }
 }
 

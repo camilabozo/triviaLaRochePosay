@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: locatorRegular;
+    src: url('../assets/fonts/locator-regular.otf');
+}
+@font-face {
+    font-family: locatorMedium;
+    src: url('../assets/fonts/locator-medium.otf');
+}
+@font-face {
+    font-family: locatorLight;
+    src: url('../assets/fonts/locator-light.otf');
+}
+@font-face {
+    font-family: locatorBlack;
+    src: url('../assets/fonts/locator-black.otf');
+}
+html{
+    font-family: locatorRegular;
+    font-size: 62.5%;
+    color: black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.sidebar{
+    display: inline;
+    width: 30%;
+    height: auto;
+    background-image: url('../assets/img/banner2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.main__container{
+    width: 70%;
+    height: 100%;
+}
+
+.title__container{
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+h1{
+    text-align: center;
+    font-size: 3rem;
+}
+h2{
+    text-align: center;
+}
+
+tr, td{
+    border: 1px solid black;
+    font-size: 1.6rem;
+    padding: 10px;
+}
+
+th{
+    border: 2px solid black;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.table__container{
+    width: 50%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}

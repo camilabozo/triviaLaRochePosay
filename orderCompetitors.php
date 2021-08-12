@@ -6,8 +6,8 @@ $competitors = explode("**", $fileContent);
 array_pop($competitors);
 $competitorsArray = array();
 foreach ($competitors as $c) { 
-    $competitorData = explode("//", $c);
-    $competitor = new Competitor($competitorData[0], $competitorData[1], $competitorData[2], random_int(0,60));
+    $competitorData = explode("||", $c);
+    $competitor = new Competitor($competitorData[0], $competitorData[1], $competitorData[2], $competitorData[3], $competitorData[4]);
     array_push($competitorsArray, $competitor);
 }
 
@@ -43,8 +43,8 @@ usort($competitorsWith3CorrectAnswers, "compareByTime");
 $competitorsArray = array_merge($competitorsWith3CorrectAnswers, $competitorsWith2CorrectAnswers, $competitorsWith1CorrectAnswers, $competitorsWith0CorrectAnswers);
 
 function compareByTime($competitorA, $competitorB){
-    if ($competitorA->getTime() == $competitorB->getTime()) {
+    if ($competitorA->getEmployedTime() == $competitorB->getEmployedTime()) {
         return 0;
     }
-    return ($competitorA->getTime() < $competitorB->getTime()) ? -1 : 1;
+    return ($competitorA->getEmployedTime() < $competitorB->getEmployedTime()) ? -1 : 1;
 }

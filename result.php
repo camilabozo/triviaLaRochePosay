@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="desktop.css" media="(min-width: 980px)">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 980px)">
     <title>¡Gracias por participar!</title>
 </head>
 <body>
     <header class="header__container">
         <section class="logo__container">
-            <img class="logo" src="./assets/title1.png" alt="LaRoche-Posay">
+            <img class="logo" src="assets/img/title1.png" alt="LaRoche-Posay">
         </section>
         <section class="second_logos__container">
-            <img class="microbiome" src="./assets/title3.png" alt="Microbiome Science">
-            <img class="dermlive" src="./assets/title2.png" alt="Dermlive Microbioma">
-            <img class="dermlivelaroche" src="./assets/title4.png" alt="Dermlive LaRoche-Posay">
+            <img class="microbiome" src="assets/img/title3.png" alt="Microbiome Science">
+            <img class="dermlive" src="assets/img/title2.png" alt="Dermlive Microbioma">
+            <img class="dermlivelaroche" src="assets/img/title4.png" alt="Dermlive LaRoche-Posay">
         </section>
     </header>
 
