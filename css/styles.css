@@ -145,7 +145,7 @@ input:placeholder-shown{
     text-overflow: ellipsis;
 }
 
-.button__start{
+.start__button{
     float: right;
     font-family: locatorRegular;
     padding: 10px 30px;
@@ -162,7 +162,7 @@ input:placeholder-shown{
     cursor: pointer;
 }
 
-.button__start:active{
+.start__button:active{
     transform: translateY(4px);
 }
 
@@ -317,7 +317,7 @@ input:placeholder-shown{
     font-family: locatorMedium;
 }
 
-.blue__button{
+.answer__button{
     width: 40px;
     height: 40px;
     margin: 10px 0 10px 0;
