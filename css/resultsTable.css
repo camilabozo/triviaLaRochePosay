@@ -26,24 +26,43 @@ html{
     color: black;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+body{
+    background-color: #393737;
 }
 
-.sidebar{
-    display: inline;
-    width: 30%;
+.header__container{
+    width: 100%;
     height: auto;
-    background-image: url('../assets/img/banner2.jpg');
-    background-size: cover;
-    background-position: center;
+}
+
+.logo__container{
+    margin: 40px 200px 15px 200px;
+    margin-top: 40px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo, .microbiome, .dermlive, .dermlivelaroche{
+    width: 150px;
+    height: 40px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column
 }
 
 .main__container{
-    width: 70%;
+    width: 90%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }
 
 .title__container{
@@ -52,27 +71,52 @@ html{
     margin-top: 30px;
 }
 h1{
+    color: white;
     text-align: center;
     font-size: 3rem;
 }
 h2{
+    color: white;
+
     text-align: center;
 }
 
+table{
+    border-collapse: collapse;
+}
+
+ td{
+     margin: 0;
+ }
+
+
 tr, td{
-    border: 1px solid black;
     font-size: 1.6rem;
     padding: 10px;
+    text-align: center;
+}
+
+.odd__row{
+    background-color: rgb(170, 170, 170);
+    color: black;
+}
+
+.pair__row{
+    /* background-color: white; */
+    color: white;
 }
 
 th{
-    border: 2px solid black;
+    /* border-radius: 5px; */
+    color: white;
+    border: none;
+    background-color: #46B7E8;
     font-size: 2rem;
     padding: 10px;
 }
 
 .table__container{
-    width: 50%;
+    width: 100%;
     display: flex;
     margin-left: auto;
     margin-right: auto;

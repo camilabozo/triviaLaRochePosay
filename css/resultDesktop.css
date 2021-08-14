@@ -1,0 +1,5 @@
+@media (min-width: 980px){
+    .second_logos__container{
+        flex-direction: row;
+    }
+}

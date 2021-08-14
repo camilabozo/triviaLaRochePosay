@@ -12,30 +12,44 @@
     <title>Resultados TRIVIA</title>
 </head>
 <body>
+    <header class="header__container">
+        <section class="logo__container">
+            <img class="microbiome" src="./assets/img/title3.png" alt="Microbiome Science">
+            <img class="dermlive" src="./assets/img/title2.png" alt="Dermlive Microbioma">
+            <img class="logo" src="./assets/img/title1.png" alt="LaRoche-Posay">
+            <img class="dermlivelaroche" src="./assets/img/title4.png" alt="Dermlive LaRoche-Posay">
+        </section>
+    </header>
     <section class="container">
-        <section class="sidebar"></section>
         <section class="main__container">
             <section class="title__container">
-                <h1>Resultados de la trivia</h1>
-                <h2>Número de participantes: <?php echo count($competitorsArray); ?></h2>
+                <h1>RESULTADOS DE LA TRIVIA</h1>
+                <h2>Cantidad de participantes: <?php echo count($competitorsArray); ?></h2>
             </section>
             <section class="table__container">
                 <table>
                     <tr>
+                        <th>Participante</th>
                         <th>Nombre</th>
                         <th>Email</th>
                         <th>Respuestas correctas</th>
                         <th>Tiempo empleado</th>
-                        <th>Finalizado a las:</th>
+                        <th>Hora de finalización</th>
                     </tr>
                     <?php
-                        foreach ($competitorsArray as $c) {
-                            echo "<tr>";
+                        foreach ($competitorsArray as $key => $c) {
+                            if($key%2 == 0){
+                                $pairOrOdd = "pair__row";
+                            }else{
+                                $pairOrOdd = "odd__row";
+                            }
+                            echo "<tr class='".$pairOrOdd."'>";
+                            echo "<td>".++$key."</td>";
                             echo "<td>".$c->getName()."</td>";
                             echo "<td>".$c->getEmail()."</td>";
-                            echo "<td>".$c->getCorrectAnswers()."</td>";
+                            echo "<td>".$c->getCorrectAnswers()."/3</td>";
                             echo "<td>".$c->getEmployedTime()."</td>";
-                            echo "<td>".$c->getEndTime()."</td>";
+                            echo "<td>".$c->getEndTime()."hs</td>";
                             echo "</tr>";
                         }
                     ?>

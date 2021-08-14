@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 980px)">
+    <link rel="stylesheet" href="./css/result.css">
+    <link rel="stylesheet" href="./css/resultDesktop.css" media="(min-width: 980px)">
     <title>¡Gracias por participar!</title>
 </head>
 <body>
@@ -21,7 +21,15 @@
     </header>
 
     <main class="main_result__container">
-        <h1>¡Gracias por participar!</h1>
+        <section class="second_title__container">
+            <h2>Respuestas correctas</h2>
+        </section>
+        <section class="correct_answers__container">
+            <h2 class="correct__answers"><?php echo $_GET['correctAnswers']."/3"?></h2>
+        </section>
+        <section class="main_title__container">
+            <h1>¡GRACIAS POR PARTICIPAR!</h1>
+        </section>
     </main>
 </body>
 </html>

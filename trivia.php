@@ -1,3 +1,11 @@
+<?php
+    if(!isset($_GET['name']) || !isset($_GET['email'])){
+        header('Location: index.php');
+    }else{
+        $userName = $_GET['name']; 
+        $userEmail = $_GET['email']; 
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -112,10 +120,8 @@
     <!-- FIN TRIVIA -->
     
     <?php 
-        $userName = $_GET['name']; 
-        $userEmail = $_GET['email']; 
-        echo "<script>localStorage.setItem('userName', '".$userName."')</script>";
-        echo "<script>localStorage.setItem('userEmail', '".$userEmail."')</script>";
+        echo "<script>sessionStorage.setItem('userName', '".$userName."')</script>";
+        echo "<script>sessionStorage.setItem('userEmail', '".$userEmail."')</script>";
     ?>
     <script src="./js/trivia.js"></script>
 

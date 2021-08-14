@@ -27,7 +27,7 @@
             <section class="form__container" id="form__container">
                 <label for="nombre">
                     <span>NOMBRE Y APELLIDO</span>
-                    <input class="input" type="text" name="userName" id="userName" placeholder="Ingresá tu nombre" required />
+                    <input class="input" type="text" name="userName" id="userName" maxlenght="35" placeholder="Ingresá tu nombre" required />
                     <div class="error__message" id="name_error__message" hidden>
                         Nombre y apellido inválido. Sólo caracteres alfabéticos.
                     </div>

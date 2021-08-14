@@ -8,8 +8,8 @@ var negative_btn__question3         = document.getElementById("negative_btn__que
 var finish_trivia_button__container = document.getElementById("finish_trivia_button__container");
 var finishButton                    = document.getElementById("finish_trivia__button");
 
-var userName = localStorage.getItem('userName');
-var userEmail = localStorage.getItem('userEmail');
+var userName = sessionStorage.getItem('userName');
+var userEmail = sessionStorage.getItem('userEmail');
 
 var remainingQuestions = 3;
 var correctAnswers = 0;
@@ -32,29 +32,31 @@ window.addEventListener("resize", relocateFinishButton);
 $(document).ready(function(){
 
     $('.trivia_main__container').show(1000);
-  
+
     $('#affirmative_btn__question1').click(function(){
         $('#first__question').replaceWith($('#first__answer').hide().fadeIn('slow'));
-        $('.overlay1').toggle(1000);
+        $('.overlay1').fadeOut(1000);
         $('#first_question__result').html("¡INCORRECTO!");
         $('#first_question__icon').attr("src", "./assets/img/redbtn.png");
     });
+    
     $('#negative_btn__question1').click(function(){
         $('#first__question').replaceWith($('#first__answer').hide().fadeIn('slow'));
-        $('.overlay1').toggle(1000);
+        $('.overlay1').fadeOut(1000);
         $('#first_question__result').html("¡CORRECTO!");
         $('#first_question__icon').attr("src", "./assets/img/greenbtn.png");
     });
 
     $('#affirmative_btn__question2').click(function(){
         $('#second__question').replaceWith($('#second__answer').hide().fadeIn('slow'));
-        $('.overlay2').toggle(1000);
+        $('.overlay2').fadeOut(1000);
         $('#second_question__result').html("¡CORRECTO!");
         $('#second_question__icon').attr("src", "./assets/img/greenbtn.png");
     });
+
     $('#negative_btn__question2').click(function(){
         $('#second__question').replaceWith($('#second__answer').hide().fadeIn('slow'));
-        $('.overlay2').toggle(1000);
+        $('.overlay2').fadeOut(1000);
         $('#second_question__result').html("¡INCORRECTO!");
         $('#second_question__icon').attr("src", "./assets/img/redbtn.png");
     });
