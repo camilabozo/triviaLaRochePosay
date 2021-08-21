@@ -2,4 +2,20 @@
     .second_logos__container{
         flex-direction: row;
     }
+
+    .answers__container{
+        margin-top: 100px;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .answer_card__container{
+        max-width: 25%;
+        max-height: 400px;
+    }
+
+    .main_title__container{
+        text-align: center;
+    }
 }

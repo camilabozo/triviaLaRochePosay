@@ -78,39 +78,39 @@
                 </section>
 
                 <section class="finish_trivia_button__container" id="finish_trivia_button__container">
-                    <button type="button" class="finish_trivia__button" id="finish_trivia__button" disabled>¡FINALIZAR!</button>
+                    <button type="button" class="finish_trivia__button" id="finish_trivia__button" disabled>¡FINALIZAR TRIVIA!</button>
                 </section>
             </section>
 
             <section class="answers__container">
-                <!-- Card que se mostrará cuando el usuario elija una respuesta -->
                 <section class="answer_card__container" id="first__answer">
                     <section class="card__content">
                         <h2 class="card__title" id="first_question__result"></h2>
-                        <img class="answer__button" src="" alt="Respuesta" id="first_question__icon">
-                        <h2 class="card_second__title">FALSO</h2>
+                        <section class="affirmation_button__container">
+                            <img class="answer__button" src="./assets/img/redbtn.png" alt="Respuesta">
+                            <h2 class="card_second__title">FALSO</h2>
+                        </section>
                         <p>La composición bacteriana del microbioma de cada persona es tan única como la huella dactilar.  El microbioma también varía según la parte del cuerpo: algunas partes del mismo están más pobladas con organismos que otras.</p>
-                        <a href="#">MÁS INFORMACIÓN</a>
                     </section>
                 </section>
-                <!-- Card que se mostrará cuando el usuario elija una respuesta -->
                 <section class="answer_card__container" id="second__answer">
                     <section class="card__content">
                         <h2 class="card__title" id="second_question__result"></h2>
-                        <img class="answer__button" src="" alt="Respuesta" id="second_question__icon">
-                        <h2 class="card_second__title">VERDADERO</h2>
+                        <section class="affirmation_button__container">
+                            <img class="answer__button" src="./assets/img/greenbtn.png" alt="Respuesta">
+                            <h2 class="card_second__title">VERDADERO</h2>
+                        </section>
                         <p>Un microbioma diverso y balanceado ayuda a tener una piel saludable, por lo cual si el mismo se encuentra desequilibrado diversas patologías como la dermatitis atópica pueden aparecer en escena.</p>
-                        <a href="#">MÁS INFORMACIÓN</a>
                     </section>
                 </section>
-                <!-- Card que se mostrará cuando el usuario elija una respuesta -->
                 <section class="answer_card__container" id="third__answer">
                     <section class="card__content">
                         <h2 class="card__title" id="third_question__result"></h2>
-                        <img class="answer__button" src="" alt="Respuesta" id="third_question__icon">
-                        <h2 class="card_second__title">VERDADERO</h2>
+                        <section class="affirmation_button__container">
+                            <img class="answer__button" src="./assets/img/greenbtn.png" alt="Respuesta">
+                            <h2 class="card_second__title">VERDADERO</h2>
+                        </section>
                         <p>El cuidado de la piel con prebióticos transforma la piel en un entorno acogedor y nutritivo para las bacterias. Esto significa proporcionar humedad, nutrientes y oligoelementos necesarios para que el microbioma se encuentre saludable y diverso.</p>
-                        <a href="#">MÁS INFORMACIÓN</a>
                     </section>
                 </section>
             </section>    
