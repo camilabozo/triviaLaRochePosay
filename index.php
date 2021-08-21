@@ -22,7 +22,7 @@
     </header>
 
     <!-- FORMULARIO INICIAL -->
-    <form action="validate.php" method="POST" id="index_form">
+    <form action="validate.php" method="POST" id="index_form" autocomplete=off>
         <main class="form_main__container" id="form_main__container">
             <section class="form__container" id="form__container">
                 <label for="nombre">
