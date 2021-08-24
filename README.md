@@ -4,4 +4,9 @@ El host podrá acceder a los resultados de la trivia a través del archivo resul
 Los participantes aparecerán ordenados por: 
 - Cantidad de respuestas correctas,
 - Tiempo empleado.
+
 En caso de existir dos o más participantes con la misma cantidad de respuestas correctas y mismo tiempo empleado, como tercer dato para el desempate se guarda la hora exacta en la que el participante finaliza la trivia.
+
+
+Una vez realizados los tests pertinentes, para vaciar la tabla de resultados, basta con eliminar el archivo data.txt.
+ATENCIÓN: ELIMINAR EL ARCHIVO, NO SU CONTENIDO.

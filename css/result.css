@@ -136,7 +136,7 @@ html{
     align-self: center;
     justify-content: center;
     width: 90%;
-    min-height: 350px;
+    min-height: 400px;
     margin-bottom: 10px; 
     margin-top: 25px;
     padding-bottom: 20px; 
@@ -149,6 +149,7 @@ html{
     display: flex;
     flex-direction: column;
     align-self: center;
+    height: 351px;
 }
 
 .affirmation_button__container{
@@ -156,7 +157,7 @@ html{
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-start;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .card_second__title{
@@ -177,4 +178,19 @@ html{
     width: 30px;
     height: 30px;
     margin: 10px 0 10px 0;
+}
+
+.card__content h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.affirmation_title__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 115px;
 }

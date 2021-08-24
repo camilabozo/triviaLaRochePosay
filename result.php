@@ -33,37 +33,43 @@
     </main>
 
     <section class="answers__container">
-        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
         <section class="answer_card__container" id="first__answer">
             <section class="card__content">
+                <section class="affirmation_title__container">
+                    <h4>TODOS TENEMOS EL <b>MISMO MICROBIOMA</b></h4>
+                </section>
+                <hr>
                 <section class="affirmation_button__container">
                     <img class="answer__button" src="./assets/img/redbtn.png" alt="Respuesta">
                     <h2 class="card_second__title">FALSO</h2>
                 </section>
                 <p>La composición bacteriana del microbioma de cada persona es tan única como la huella dactilar.  El microbioma también varía según la parte del cuerpo: algunas partes del mismo están más pobladas con organismos que otras.</p>
-                <!--<a href="#">MÁS INFORMACIÓN</a>-->
             </section>
         </section>
-        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
         <section class="answer_card__container" id="second__answer">
             <section class="card__content">
+                <section class="affirmation_title__container">
+                    <h4>LA DERMATITIS ATÓPICA SE RELACIONA CON UN <b>MICROBIOMA DESBALANCEADO</b></h4>
+                </section>
+                <hr>
                 <section class="affirmation_button__container">
                     <img class="answer__button" src="./assets/img/greenbtn.png" alt="Respuesta">
                     <h2 class="card_second__title">VERDADERO</h2>
                 </section>
                 <p>Un microbioma diverso y balanceado ayuda a tener una piel saludable, por lo cual si el mismo se encuentra desequilibrado diversas patologías como la dermatitis atópica pueden aparecer en escena.</p>
-                <!--<a href="#">MÁS INFORMACIÓN</a>-->
             </section>
         </section>
-        <!-- Card que se mostrará cuando el usuario elija una respuesta -->
         <section class="answer_card__container" id="third__answer">
             <section class="card__content">
+                <section class="affirmation_title__container">
+                    <h4>EL CUIDADO DE LA PIEL CON PREBIÓTICOS AYUDA A TENER UN <b>MICROBIOMA EQUILIBRADO</b></h4>
+                </section>
+                <hr>
                 <section class="affirmation_button__container">
                     <img class="answer__button" src="./assets/img/greenbtn.png" alt="Respuesta">
                     <h2 class="card_second__title">VERDADERO</h2>
                 </section>
                 <p>El cuidado de la piel con prebióticos transforma la piel en un entorno acogedor y nutritivo para las bacterias. Esto significa proporcionar humedad, nutrientes y oligoelementos necesarios para que el microbioma se encuentre saludable y diverso.</p>
-                <!--<a href="#">MÁS INFORMACIÓN</a>-->
             </section>
         </section>
     </section>    
